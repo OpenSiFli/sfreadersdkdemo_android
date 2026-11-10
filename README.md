@@ -8,7 +8,7 @@
 SFReaderSDK 提供从手表端读取 Log、Asset 等功能。
 
 ## 1.2 集成
-###1.Gradle拉取配置
+### Gradle拉取配置
 ```
 allprojects {
   repositories {
