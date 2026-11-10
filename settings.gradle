@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // 把你原来 allprojects 里的仓库移到这里
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username '65a890ad4f41789f56425965'
+                password 'Y-kxYEyTl5)['
+            }
+            url 'https://packages.aliyun.com/maven/repository/2457536-release-P0YgD8/'
+        }
+    }
+}
+
+rootProject.name = "SFReaderDemo"
+include ':app'
